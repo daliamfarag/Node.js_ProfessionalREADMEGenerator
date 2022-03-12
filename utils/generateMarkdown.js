@@ -1,5 +1,4 @@
 const licenses = require("./licenses");
-
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -15,9 +14,8 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  return `# ${license.name}\n${license.description.long}\n\n${renderLicenseLink(license)}`
+  return `${license.name}\n${license.description.long}\n\n${renderLicenseLink(license)}`
 }
-
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
